@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sistema de Gerenciamento de Tarefas com Armazenamento Local</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Sistema de Gerenciamento de Tarefas com Armazenamento Local</h1>
+
+  <form id="task-form">
+    <input type="text" id="nome-tarefa" placeholder="Nome da tarefa" required>
+    <input type="date" id="data-tarefa" required>
+    
+    <select id="prioridade-tarefa">
+      <option value="alta">Alta</option>
+      <option value="media">Média</option>
+      <option value="baixa">Baixa</option>
+    </select>
+
+    <button type="submit">Adicionar Tarefa</button>
+  </form>
+
+  <div>
+    <button id="filtro-status">Filtrar por Status</button>
+    <button id="filtro-prioridade">Filtrar por Prioridade</button>
+  </div>
+
+  <ul class="lista-tarefa" id="lista-tarefa"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
